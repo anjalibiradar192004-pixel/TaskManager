@@ -1,0 +1,160 @@
+/* Base Styles & Reset */
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --background: #000;
+  --surface: rgba(0, 0, 0, 0.75);
+  --text-main: #ffffff;
+  --text-muted: #d1d5db;
+  --border: rgba(255, 255, 255, 0.2);
+  --radius: 10px;
+}
+
+/* Full Page */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  background-image: url("./assets/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card */
+.task-manager-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: var(--text-main);
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+/* Subtitle */
+h3 {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+/* Input Row */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Text Input */
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #d1d5db;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary);
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+
+  background: var(--primary);
+  color: white;
+
+  border: none;
+  border-radius: var(--radius);
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}
+
+/* Filters */
+.filters-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Dropdown */
+select {
+  padding: 10px;
+
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  outline: none;
+}
+
+select option {
+  color: black;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.progress-section h2 {
+  color: white;
+}
+
+/* Progress Text */
+p {
+  color: #fbbf24;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 10px;
+}
